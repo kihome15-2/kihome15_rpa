@@ -32,7 +32,7 @@ os.makedirs(output_path, exist_ok=True)
 #--- 기준 데이터 로드 ---#
 data1_list= []
 start_point = 0
-for idx1, check_no in enumerate(tqdm_notebook(np.arange(start_point, 100000))):
+for idx1, check_no in enumerate(tqdm_notebook(np.arange(start_point, 10))):
     # request를 보내서 기초 데이터를 받음
     try:
         req = requests.get(f"https://apis.zigbang.com/v2/danjis/{check_no}")
